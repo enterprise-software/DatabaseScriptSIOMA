@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "987263e4-d99b-4717-b6f0-0a143aa3fce8",
+		"name": "SIOMA_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "259907"
+	},
+	"item": [
+		{
+			"name": "DataPrecipitacion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "RdGXaSrW7+3wGiG5UorPxP0AfFt+raci0KJ+8ocwrZc=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"desde\": \"2022-01-01 00:00:00\",\r\n    \"hasta\": \"2022-01-31 23:59:59\",\r\n    \"tipo_periodo_id\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.siomapp.com/4/datos/400/10/28",
+					"protocol": "https",
+					"host": [
+						"api",
+						"siomapp",
+						"com"
+					],
+					"path": [
+						"4",
+						"datos",
+						"400",
+						"10",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DataPrecipitacion Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "RdGXaSrW7+3wGiG5UorPxP0AfFt+raci0KJ+8ocwrZc=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"desde\": \"2022-01-01 00:00:00\",\r\n    \"hasta\": \"2022-07-31 23:59:59\",\r\n    \"tipo_periodo_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.siomapp.com/4/datos/35/1/28",
+					"protocol": "https",
+					"host": [
+						"api",
+						"siomapp",
+						"com"
+					],
+					"path": [
+						"4",
+						"datos",
+						"35",
+						"1",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sujetos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "RdGXaSrW7+3wGiG5UorPxP0AfFt+raci0KJ+8ocwrZc=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.siomapp.com/4/usuarios/sujetos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"siomapp",
+						"com"
+					],
+					"path": [
+						"4",
+						"usuarios",
+						"sujetos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Variables",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "RdGXaSrW7+3wGiG5UorPxP0AfFt+raci0KJ+8ocwrZc=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.siomapp.com/4/usuarios/variables",
+					"protocol": "https",
+					"host": [
+						"api",
+						"siomapp",
+						"com"
+					],
+					"path": [
+						"4",
+						"usuarios",
+						"variables"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
